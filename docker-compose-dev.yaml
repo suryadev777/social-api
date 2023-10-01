@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  postgres-db:
+    image: postgres:latest
+    container_name: postgres_dev
+    environment:
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: user
+      POSTGRES_DB: social-api
+    ports:
+      - "5432:5432"
